@@ -7,20 +7,26 @@
 .teslaheader {
   width: 100%;
   height: 8vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: white;
   position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 35px;
 }
 
 .teslaheader h3 {
-  color: white;
-  font-size: 3.5vh;
-  font-family: "Universal Sans Display", -apple-system, Arial, sans-serif;
+  color: black;
+  font-size: 3.8vh;
+  font-family: "Universal Sans Display", '-apple-system', Arial, sans-serif;
 }
+
+.teslaLogo {
+  color: #fff;
+  margin-left: 20px;
+}
+
 
 .teslaContent {
   width: 100%;
@@ -44,7 +50,7 @@
 }
 
 .teslaButton {
-  padding: 12px 70px;
+  padding: 12px 50px;
   font-size: 16px;
   font-weight: 500;
   border-radius: 4px;
@@ -64,14 +70,14 @@
   background-color: #3b59ba;
 }
 
-.learnMore {
+.viewinventory {
   background-color: white;
   color: rgb(52, 51, 51);
   border: none;
   font-weight: 560;
 }
 
-.learnMore:hover {
+.viewinventory:hover {
   background-color: #f2f2f2;
 }
 
@@ -152,7 +158,7 @@
   background-color: white;
 }
 
-/* Horizontal carousel section */
+
 .teslahero {
   width: 100%;
   padding: 50px 0;
@@ -194,16 +200,14 @@
 .carouselOverlay {
   position: absolute;
   inset: 0;
-  /* left: 0; */
   padding: 25px;
   width: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
   color: white;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start;  */
   justify-content: space-between;
-  /* gap: 10px;  */
+
 }
 
 .carouselOverlay h3 {
@@ -296,9 +300,7 @@
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  /* background-color: rgb(151, 15, 15); */
-  /* flex-wrap: wrap; */
-  /* gap: 20px; */
+ 
 }
 img {
   width: 100%;
@@ -309,16 +311,284 @@ img {
 
 .teslamap {
   width: 100%;
-  height: 80vh;
-  /* background-color: #000000; */
+  height: 90vh;
   padding: 20px;
-  /* position: relative; */
+
 }
 
 .teslamap img {
   width: 100%;
-  height: 120%;
+  height: 95%;
   object-fit: cover;
   border-radius: 12px;
   padding: 20px;
+}
+
+.teslacharge {
+  width: 100%;
+  min-height: 30vh;
+  background-color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.teslachargeContent {
+  flex: 1;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.teslachargetext {
+  font-size: 40px;
+  font-weight: 550;
+  margin: 0 0 5px 0; 
+  text-align: left;
+  padding: 0;
+  font-family: "Universal Sans Display", '-apple-system', Arial, sans-serif;
+}
+
+.teslanetwork {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  color: #555;
+  padding: 0; 
+}
+
+.teslachargeButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.teslachargeButtons button {
+  flex: 1; 
+  max-width: 140px;
+}
+
+
+
+.viewNetwork {
+  background-color: black;
+  color: white;
+  font-weight: 560;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learnMore {
+  background-color: rgb(230, 228, 228);
+  color: rgb(52, 51, 51);
+  font-weight: 560;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.teslachargerStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  flex-wrap: wrap;
+}
+
+.chargerStat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.statTop {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.statNumber {
+  font-size: 45px;
+  font-weight: 550;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.statIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.statLabel {
+  font-size: 20px;
+  color: #666;
+  margin-top: 0;
+}
+
+.tesla-panels-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+.tesla-panels-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 0 60px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.tesla-panels-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.panel-card {
+  flex: 0 0 auto;
+  width: 85%;
+  height: 550px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+.panel-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.panel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.panel-overlay h3 {
+  font-size: 40px;
+  font-weight: 550;
+  margin: 0;
+}
+
+.panel-overlay p {
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.panel-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.carouselDot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carouselDot.active {
+  background-color: #333;
+}
+
+.tesla-footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.tesla-footer-content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start;     
+  padding: 20px 130px;
+  gap: 15px; 
+
+} 
+
+.tesla-footer-content  h5 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: grey;
+  font-family:  "Universal Sans Display", '-apple-system', Arial, sans-serif;
+}
+
+.tesla-footer-content p {
+ font-size: 12px;
+ color: grey;
+ font-weight: 500;
+ font-family:  "Universal Sans Display", '-apple-system', Arial, sans-serif;
+
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: black; 
+  cursor: pointer;
+}
+.teslasubfooter {
+  width: 80%;
+  margin-left: 100px;
+  padding: 15px;
+}
+
+.teslasubfooter p {
+  font-size: 12px;
+  font-weight: 550;
+  color: rgb(59, 58, 58);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.teslasubfooter p span {
+  padding: 0 5px;
 }
